@@ -7,7 +7,7 @@ class PhraseProcessor:
         self.word_embeddings = word_embeddings
 
     def load_phrases(self, file_path):
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r',encoding='Windows-1252') as file:
             reader = csv.reader(file)
             return [row[0] for row in reader]
 
