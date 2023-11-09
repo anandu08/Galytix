@@ -1,0 +1,12 @@
+Suggestions for improvements and scope of optimizations in the future
+
+
+Optimize Vector Calculations: Use in-place operations where possible to avoid creating new numpy arrays and reduce memory usage.
+
+
+
+Vector Normalization: Check if the vector is a zero vector before normalizing to avoid division by zero errors.
+
+Data Structures: Consider using data structures that are more efficient for the task at hand. For example, a priority queue could be used to find the best match in find_closest_match
+
+Code Efficiency: The calculate_normalized_embedding method is called multiple times for the same phrase in find_closest_match. Consider optimizing this by storing the results for reuse
